@@ -3,7 +3,7 @@ package ru.bugred.tests;
 import com.github.javafaker.Faker;
 import org.junit.jupiter.api.Test;
 
-public class AddUserTest extends TestBase{
+public class AddUserTest extends TestBase {
 
     @Test
     void successfulAddUserTest() {
@@ -15,7 +15,7 @@ public class AddUserTest extends TestBase{
         String email = faker.internet().emailAddress();
 
 
-                addUserPage.openAddUserPage()
+        addUserPage.openAddUserPage()
                 .setName(name)
                 .setEmail(email)
                 .setPassword(password)
